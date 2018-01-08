@@ -1,0 +1,21 @@
+######################################################
+#                                                    #
+#    Author              : WU Kaixin                 #
+#    Date                : 2017/11/12                #
+#    Email               : wukaixin_neu@163.com      #
+#    Last Modified in    : Neu NLP lab., Shenyang    #
+#                                                    #
+######################################################
+
+steps:
+    cd Evaluation
+    mkdir data
+    ...(data preparation)
+    cd data
+    ll
+      |__hyp          (decoding translation result)
+      |__src.sgm      (source, xml format)
+      |__ref.sgm      (reference, xml format)
+    cd ..
+    ./run.sh
+    
